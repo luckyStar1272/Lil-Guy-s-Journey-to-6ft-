@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad48ddbc16a6a4aa01946f8194fb32, type: 3}
+  m_Name: Rank A Earth Familiar
+  m_EditorClassIdentifier: 
+  name: Earthquake
+  health: 14
+  atkDmg: 5
+  type: 3
+  rank: 2
+  hasAbility: 1
+  abilityName: Landslide
+  cardDescription: Prevents 2 enemy cards from using their abilities for 2 turns.
+  abilityCost: 4
+  cardValue: 14
+  cardImg: {fileID: 21300000, guid: 2245a2c24aa98e54ea47cc60df33ba74, type: 3}
+  status: 0

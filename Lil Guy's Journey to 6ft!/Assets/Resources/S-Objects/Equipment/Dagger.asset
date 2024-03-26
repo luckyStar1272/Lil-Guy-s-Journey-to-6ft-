@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad48ddbc16a6a4aa01946f8194fb32, type: 3}
+  m_Name: Dagger
+  m_EditorClassIdentifier: 
+  name: Dagger
+  health: 0
+  atkDmg: 3
+  type: 7
+  rank: 0
+  hasAbility: 1
+  abilityName: ATK Buff
+  cardDescription: "Increases (+3 ATK) a familiar card\u2019s ATK until the familiar
+    card is removed from the field."
+  abilityCost: 0
+  cardValue: 12
+  cardImg: {fileID: 21300000, guid: c6ad82b99fb1f2b43830996cb4d94e9d, type: 3}
+  status: 6

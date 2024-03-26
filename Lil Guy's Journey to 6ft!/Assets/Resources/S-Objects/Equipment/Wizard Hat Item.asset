@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad48ddbc16a6a4aa01946f8194fb32, type: 3}
+  m_Name: Wizard Hat Item
+  m_EditorClassIdentifier: 
+  name: Wizard Hat
+  health: 5
+  atkDmg: 0
+  type: 7
+  rank: 0
+  hasAbility: 1
+  abilityName: HP Buff
+  cardDescription: "Increases (+5 HP) a familiar card\u2019s HP until the familiar
+    card is removed from the field."
+  abilityCost: 0
+  cardValue: 12
+  cardImg: {fileID: 21300000, guid: 9c2d898b8b57a88448b8ac28345c2749, type: 3}
+  status: 6

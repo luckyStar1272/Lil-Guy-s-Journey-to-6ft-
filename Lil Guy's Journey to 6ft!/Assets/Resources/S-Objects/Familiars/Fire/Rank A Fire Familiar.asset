@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad48ddbc16a6a4aa01946f8194fb32, type: 3}
+  m_Name: Rank A Fire Familiar
+  m_EditorClassIdentifier: 
+  name: Fire Storm
+  health: 8
+  atkDmg: 9
+  type: 1
+  rank: 2
+  hasAbility: 1
+  abilityName: Lightning
+  cardDescription: Strikes (-4 HP) 3 random enemy cards.
+  abilityCost: 4
+  cardValue: 14
+  cardImg: {fileID: 21300000, guid: c3456eaac56b3d045943df7a02684348, type: 3}
+  status: 0
