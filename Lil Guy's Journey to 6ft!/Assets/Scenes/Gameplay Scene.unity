@@ -880,6 +880,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &439763217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439763219}
+  - component: {fileID: 439763218}
+  m_Layer: 0
+  m_Name: Card Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &439763218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439763217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be0c2c52e21f3f488d285c47f5ac5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 3973731471788895360, guid: db6cc06e99616744cad57fa3cd8bdcdb, type: 3}
+  playerDeckContent: {fileID: 690990707}
+  enemyCardData:
+  - {fileID: 11400000, guid: a5f5ba3b2fbbf6543922ff3583028d7d, type: 2}
+  - {fileID: 11400000, guid: 9c31abd3526732b4fad725cfd17ea54f, type: 2}
+  - {fileID: 11400000, guid: 951c957755b584c49890feaf3fd1ca57, type: 2}
+  - {fileID: 11400000, guid: f1420e1721fa7434bbcbeaa44102110a, type: 2}
+  familiarCardData:
+  - {fileID: 11400000, guid: 9b7e3d4c7ca17564e803e2ab15c493a2, type: 2}
+  - {fileID: 11400000, guid: 3f876807cd1b15e468429c53e23c1c27, type: 2}
+  - {fileID: 11400000, guid: 8688e591ba492ad45944dc9d0725e0ae, type: 2}
+  - {fileID: 11400000, guid: c40ef73709c41fe46a9a29d45c42fd7a, type: 2}
+  - {fileID: 11400000, guid: 28eeebb2a2b27c646a27daf809000c42, type: 2}
+  - {fileID: 11400000, guid: 3e7e9bbc24928bc44a564869d905e0ae, type: 2}
+  - {fileID: 11400000, guid: f19626e17e7e3dc41a51007335190493, type: 2}
+  - {fileID: 11400000, guid: 7413304eda7b4394b94d98cde981b2ac, type: 2}
+  - {fileID: 11400000, guid: 3c29f5c5bf72acc41baffb67855a2445, type: 2}
+  - {fileID: 11400000, guid: 62f8d5f2798a7954fa019b20f33003dc, type: 2}
+  - {fileID: 11400000, guid: 8993e56a21847164494c4adca2a0aa38, type: 2}
+  - {fileID: 11400000, guid: b8939e8610072d1428f1aa2b6c847a71, type: 2}
+  - {fileID: 11400000, guid: d85de976e2fc7434e98302caa7acebb9, type: 2}
+  - {fileID: 11400000, guid: 5abe3dd8c12c722499a1e01c48de8ad6, type: 2}
+  - {fileID: 11400000, guid: 26fa670baa3b9fc4c91296344bd309b6, type: 2}
+  rewardCardData:
+  - {fileID: 11400000, guid: c37665bd72185f44e8007cea10871da1, type: 2}
+  - {fileID: 11400000, guid: 786027a9fad80ff4fa0749ebd566257d, type: 2}
+  - {fileID: 11400000, guid: 76e19e297e684454baa7df015e0a4b09, type: 2}
+  - {fileID: 11400000, guid: 2311630220dce614a8e14f9af0432883, type: 2}
+  - {fileID: 11400000, guid: b07a125d7d77f21488ac05fc8c0680af, type: 2}
+  - {fileID: 11400000, guid: 9a24d767ed750cd4b87a0ff54d3a0d82, type: 2}
+  - {fileID: 11400000, guid: d213bc933ef34fc4eb71ed58c807e8ab, type: 2}
+  - {fileID: 11400000, guid: 356013bdf690e5242a812ecf258ecf23, type: 2}
+  - {fileID: 11400000, guid: 5c1d92f78d94033409f89a59075c435f, type: 2}
+--- !u!4 &439763219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439763217}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.82195, y: -0.8304883, z: -1.4049037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504081294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1275,6 @@ GameObject:
   - component: {fileID: 690990710}
   - component: {fileID: 690990709}
   - component: {fileID: 690990708}
-  - component: {fileID: 690990711}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1239,6 +1315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testImg: {fileID: 5545752346552626617, guid: d7a4e12c4d8449a4f9bf74e53c265b2c, type: 3}
   testNum: 5
+  cs: {fileID: 439763218}
 --- !u!114 &690990709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1279,35 +1356,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &690990711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690990706}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059218d6aab18974dbb9962e821613bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 3973731471788895360, guid: db6cc06e99616744cad57fa3cd8bdcdb, type: 3}
-  familiarDeck:
-  - {fileID: 11400000, guid: 9b7e3d4c7ca17564e803e2ab15c493a2, type: 2}
-  - {fileID: 11400000, guid: 3f876807cd1b15e468429c53e23c1c27, type: 2}
-  - {fileID: 11400000, guid: 8688e591ba492ad45944dc9d0725e0ae, type: 2}
-  - {fileID: 11400000, guid: c40ef73709c41fe46a9a29d45c42fd7a, type: 2}
-  - {fileID: 11400000, guid: 28eeebb2a2b27c646a27daf809000c42, type: 2}
-  - {fileID: 11400000, guid: 3e7e9bbc24928bc44a564869d905e0ae, type: 2}
-  - {fileID: 11400000, guid: f19626e17e7e3dc41a51007335190493, type: 2}
-  - {fileID: 11400000, guid: 7413304eda7b4394b94d98cde981b2ac, type: 2}
-  - {fileID: 11400000, guid: 3c29f5c5bf72acc41baffb67855a2445, type: 2}
-  - {fileID: 11400000, guid: 62f8d5f2798a7954fa019b20f33003dc, type: 2}
-  - {fileID: 11400000, guid: 8993e56a21847164494c4adca2a0aa38, type: 2}
-  - {fileID: 11400000, guid: b8939e8610072d1428f1aa2b6c847a71, type: 2}
-  - {fileID: 11400000, guid: d85de976e2fc7434e98302caa7acebb9, type: 2}
-  - {fileID: 11400000, guid: 5abe3dd8c12c722499a1e01c48de8ad6, type: 2}
-  - {fileID: 11400000, guid: 26fa670baa3b9fc4c91296344bd309b6, type: 2}
 --- !u!1 &746445953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1645707801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2939,3 +2987,4 @@ SceneRoots:
   - {fileID: 1645707804}
   - {fileID: 379732713}
   - {fileID: 2000193368}
+  - {fileID: 439763219}

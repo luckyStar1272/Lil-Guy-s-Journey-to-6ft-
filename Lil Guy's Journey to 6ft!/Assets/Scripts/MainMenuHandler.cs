@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//RESPONSIBLE FOR MAIN MENU AND SCENE TRANSITIONS.
+
 public class MainMenuHandler : MonoBehaviour
 {
     //loads/starts game.

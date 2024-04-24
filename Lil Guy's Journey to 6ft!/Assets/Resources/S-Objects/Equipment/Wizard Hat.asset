@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9ad48ddbc16a6a4aa01946f8194fb32, type: 3}
-  m_Name: Wizard Hat Item
+  m_Name: Wizard Hat
   m_EditorClassIdentifier: 
   name: Wizard Hat
   health: 5

@@ -1,7 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+//CONTAINS SCRIPTABLE CARD OBJECTS INFO.
 
 namespace CardNamespace {
     [CreateAssetMenu(menuName = "New Card")]
@@ -11,7 +11,7 @@ namespace CardNamespace {
         [Header("Card Stats:")]
         
         //card name.
-        public string name;
+        public new string name;
         
         //card health.
         public int health;
@@ -50,14 +50,6 @@ namespace CardNamespace {
 
         public enum CardRank {C, B, A, S}
 
-        public enum CardStat {
-            alive,
-            dead,
-            poisoned,
-            atkUp,
-            hpUp,
-            magicSealed,
-            other
-        }
+        public enum CardStat {alive, dead, poisoned, atkUp, hpUp, magicSealed, other}
     }
 }

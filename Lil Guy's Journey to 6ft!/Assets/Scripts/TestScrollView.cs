@@ -1,23 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Tilemaps;
 using UnityEngine.UI;
+
+//TEST SCRIPT FOR POPULATING SCROLL.
 
 public class TestScrollView : MonoBehaviour
 {
     public GameObject testImg;
     public int testNum;
+    [SerializeField] CardSpawner cs;
 
     public void Start() {
-        PopulateTest();
+/*        for(int i = 0; i < testNum; i++) {
+            PopulateTest();
+        }
+*/
+        cs.SpawnCard("player deck");
     }
 
     public void PopulateTest() {
-        GameObject newTestImg;
-        for(int i = 0; i < testNum; i++) {
-            newTestImg = Instantiate(testImg, transform);
-            newTestImg.GetComponent<Image>().color = Random.ColorHSV();
+/*        for(int i = 0; i < testNum; i++) {
+            Instantiate(testImg, transform);
+            testImg.GetComponent<Image>().color = Random.ColorHSV();
         }
+*/
+        Instantiate(testImg, transform);
+        testImg.GetComponent<Image>().color = Random.ColorHSV();
     }
 }
