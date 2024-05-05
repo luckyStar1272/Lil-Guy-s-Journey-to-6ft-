@@ -44,11 +44,11 @@ TagManager:
   - name: Card Mat
     uniqueID: 1968130981
     locked: 0
-  - name: Card
-    uniqueID: 3768312813
-    locked: 0
   - name: Player Deck
     uniqueID: 1213738445
+    locked: 0
+  - name: Card
+    uniqueID: 3768312813
     locked: 0
   - name: UI
     uniqueID: 1490976885

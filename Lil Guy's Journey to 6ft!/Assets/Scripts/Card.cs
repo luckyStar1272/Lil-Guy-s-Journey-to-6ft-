@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-//CONTAINS SCRIPTABLE CARD OBJECTS INFO.
+// CONTAINS SCRIPTABLE CARD OBJECTS INFO.
 
 namespace CardNamespace {
     [CreateAssetMenu(menuName = "New Card")]
@@ -10,46 +10,49 @@ namespace CardNamespace {
     {
         [Header("Card Stats:")]
         
-        //card name.
+        // card name.
         public new string name;
         
-        //card health.
+        // card health.
         public int health;
         
-        //card's attack damage.
+        // card's attack damage.
         public int atkDmg;
         
-        //card's type.
+        // card's type.
         public CardType type;
         
-        //card's rank.
+        // card's rank.
         public CardRank rank;
         
-        //boolean to see if card has an ability.
+        // boolean to see if card has an ability.
         public Boolean hasAbility;
         
-        //card's ability name.
+        // card's ability name.
         public string abilityName;
         
-        //description for the card's ability if they have one.
+        // description for the card's ability if they have one.
         public string cardDescription;
         
-        //MP cost to use card's ability.
+        // MP cost to use card's ability.
         public int abilityCost;
         
-        //card's value; enemy reward value, sell value, and buy value.
+        // card's value; enemy reward value, sell value, and buy value.
         public int cardValue;
 
-        //sprite/image of card.    
+        // sprite/image of card.    
         public Sprite cardImg;
 
-        //card's current status.
+        // card's current status.
         public CardStat status;
 
+        // all possible card types.
         public enum CardType {enemy, fireFamiliar, waterFamiliar, earthFamiliar, lightFamiliar, darkFamiliar, item, equip, spell}
 
+        // all possible card ranks.
         public enum CardRank {C, B, A, S}
 
+        // all possible card states.
         public enum CardStat {alive, dead, poisoned, atkUp, hpUp, magicSealed, other}
     }
 }
