@@ -1137,8 +1137,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 30}
+  m_AnchoredPosition: {x: 62.5, y: -57.500023}
+  m_SizeDelta: {x: 125, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5368781200623748183
 CanvasRenderer:
@@ -1227,7 +1227,19 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options: []
+    m_Options:
+    - m_Text: Choose Action
+      m_Image: {fileID: 0}
+    - m_Text: Play Card
+      m_Image: {fileID: 0}
+    - m_Text: Attack
+      m_Image: {fileID: 0}
+    - m_Text: Activate Ability
+      m_Image: {fileID: 0}
+    - m_Text: Use Item
+      m_Image: {fileID: 0}
+    - m_Text: Cast Spell
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1244,7 +1256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20422a7efdcf222478cf6f166ce60b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 5266110677975242040}
+  cardData: {fileID: 5266110677975242040}
+  playerCardHolderAPrefab: {fileID: 4712892077920632455, guid: ad8f6e7f42743a54ba3f4db3f49cb41a, type: 3}
+  playerCardHolderBPrefab: {fileID: 3047894439324595602, guid: a7d3c9e521f2ad04bba5a1a4bff95d67, type: 3}
 --- !u!1 &7635734786865315953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1392,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7635734786865315953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1429,6 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropDown: {fileID: 7536785447825414859}
+  card: {fileID: 5266110677975242040}
 --- !u!114 &8769495652440386496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,7 +1885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Choose Action
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d19f75a3b0f33745815d1f64496e39e, type: 2}
   m_sharedMaterial: {fileID: 1961230054700903362, guid: 8d19f75a3b0f33745815d1f64496e39e, type: 2}

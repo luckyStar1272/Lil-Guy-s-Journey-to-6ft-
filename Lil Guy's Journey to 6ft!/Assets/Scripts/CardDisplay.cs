@@ -52,7 +52,7 @@ public class CardDisplay : MonoBehaviour
         cardImg.sprite = cardData.cardImg;
     }
 
-    public Card.CardType getCardType() {
+    public Card.CardType GetCardType() {
         return cardData.type;
     }
 }

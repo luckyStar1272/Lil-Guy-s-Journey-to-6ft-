@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - In Player Deck
+  - On Field
+  - Discarded
+  - Empty
+  - Full
   layers:
   - Default
   - TransparentFX

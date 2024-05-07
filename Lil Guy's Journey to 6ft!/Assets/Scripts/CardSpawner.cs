@@ -42,9 +42,11 @@ public class CardSpawner : MonoBehaviour
         switch(deckType) {
             case "enemy deck":
                 cardData.cardData = PickEnemyCard(chance);
+                newCard.tag = "In Enemy Deck";
                 break;
             case "player deck":
                 cardData.cardData = PickFamiliarCard(chance);
+                newCard.tag = "In Player Deck";
                 // sets card as a child to content in player deck scroll view.
                 newCard.transform.SetParent(playerDeckContent, false);
                 newCard.transform.localScale = new Vector3(2f, 2f, 2f);
