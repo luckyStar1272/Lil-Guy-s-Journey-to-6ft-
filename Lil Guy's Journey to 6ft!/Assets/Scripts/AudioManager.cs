@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+// MANAGES ALL AUDIO FOR GAME.
+
 public class AudioManager : MonoBehaviour
 {
     // audio mixer.
