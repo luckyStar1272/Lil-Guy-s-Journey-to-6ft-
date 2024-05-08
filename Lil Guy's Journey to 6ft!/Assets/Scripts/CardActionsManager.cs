@@ -1,10 +1,8 @@
-using CardNamespace;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
-using System.Collections.Generic;
 
-// MANAGES CARD ACTIONS BASED ON USER ACTIONS (EX. MOUSE CLICKS ETC.).
+// MANAGES CARD SELECTABLES (EX. MOUSE CLICKS ETC.).
 
 public class CardActionsManager : MonoBehaviour, ISelectHandler
 {
@@ -26,5 +24,6 @@ public class CardActionsManager : MonoBehaviour, ISelectHandler
     // when selected, the cropdown menu of actions the card can do will appear and the user can decide card actions.
     public void OnSelect(BaseEventData eventData) {
         dropDownComponent.Show();
+        GetComponent<AudioSource>().Play();
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3104632378869497110}
   - component: {fileID: 2433466371463451015}
   - component: {fileID: 1627388313659863877}
+  - component: {fileID: -5692406115278221596}
   m_Layer: 7
   m_Name: Enemy Card Holder
   m_TagString: Empty
@@ -117,3 +118,15 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 0
   m_TargetGraphic: {fileID: 2433466371463451015}
+--- !u!114 &-5692406115278221596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885498678680661434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55cc9701a6509d74499bdb8ec46beccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuHandler : MonoBehaviour
 {
+    // toggles fullscreen on and off with esc key.
+    void Update() {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            Screen.fullScreen = !Screen.fullScreen;
+        }
+    }
+
     // loads/starts game.
     public void Play() {
         SceneManager.LoadScene("Gameplay Scene");
@@ -15,5 +20,15 @@ public class MainMenuHandler : MonoBehaviour
     // quits game/closes application.
     public void Quit() {
         Application.Quit();
+    }
+
+    // loads/goes back to start scene.
+    public void QuitRun() {
+        SceneManager.LoadScene("Start Scene");
+    }
+
+    // loads/opens options scene.
+    public void Option() {
+        SceneManager.LoadScene("Options Scene");
     }
 }

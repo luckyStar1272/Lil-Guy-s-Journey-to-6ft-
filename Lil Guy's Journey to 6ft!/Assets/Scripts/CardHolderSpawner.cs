@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+
+// CREATES CARD MAT; SPAWNS CARD HOLDERS.
 
 public class CardHolderSpawner : MonoBehaviour
 {
@@ -15,22 +14,18 @@ public class CardHolderSpawner : MonoBehaviour
     [SerializeField] Transform playerCardHolderAGroup;
     [SerializeField] Transform playerCardHolderBGroup;
 
-    // list of card holders.
-    public List<GameObject> enemyCardHolders = new List<GameObject>();
-    public List<GameObject> playerCardHoldersA = new List<GameObject>();
-    public List<GameObject> playerCardHoldersB = new List<GameObject>();
-
     // creates card mat.
     void Start() {
         // create enemy card holders.
         // create player card holders A and B.
         for(int i = 0; i < 4; i++) {
-            enemyCardHolders.Add(spawnCardHolder(enemyCardHolderPrefab, enemyCardHolderGroup));
-            playerCardHoldersA.Add(spawnCardHolder(playerCardHolderAPrefab, playerCardHolderAGroup));
-            playerCardHoldersB.Add(spawnCardHolder(playerCardHolderBPrefab, playerCardHolderBGroup));
+            spawnCardHolder(enemyCardHolderPrefab, enemyCardHolderGroup);
+            spawnCardHolder(playerCardHolderAPrefab, playerCardHolderAGroup);
+            spawnCardHolder(playerCardHolderBPrefab, playerCardHolderBGroup);
         }
     }
 
+    // instantiates or spawns a card holder prefab clone.
     public GameObject spawnCardHolder(GameObject cardHolderPrefab, Transform cardHolderGroup) {
         GameObject newCardHolder = Instantiate(cardHolderPrefab);
         newCardHolder.tag = "Empty";

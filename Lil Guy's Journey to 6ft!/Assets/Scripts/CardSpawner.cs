@@ -2,7 +2,6 @@ using UnityEngine;
 using CardNamespace;
 using System;
 using Random = UnityEngine.Random;
-using UnityEngine.UI;
 
 // SPAWNS/CREATES CARDS FOR PLAYER DECKS, ENEMY DECKS, AND TREASURE REWARDS.
 
